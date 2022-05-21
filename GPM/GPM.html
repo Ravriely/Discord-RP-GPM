@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<meta charset="UTF-8">
+		<link href="GPM.css" rel="stylesheet">
+		<script src="GPM.js"></script>
+		<title>Discord RP | Grand Paris Moulon - Menu</title>
+  	</head>
+  	<body>
+
+		<header id="titlebar">
+			<div id="drag-region">
+				<img id="bar-img" src="images/GPM-Logo-Transparent.png"/>
+				<div id="window-controls">
+
+					<div class="button" id="min-button" onclick="createLinkWindow('all','close')">
+						<img class="icon" src="images/undo.png" draggable="false"/>
+					</div>
+
+					<div class="button" id="close-button" onclick="window.close()">
+						<img class="icon" src="images/remove-2.png" draggable="false"/>
+					</div>
+			
+				</div>
+			</div>
+		</header>
+
+		<a href="javascript:createLinkWindow('viewer-gpm','open')"><img src="images/GPM-Banner.png" width="100%" style="margin-top: 5%; margin-bottom: -1%; -webkit-app-region: no-drag;"></a>
+		
+		<div class="main">
+			<a href="javascript:createLinkWindow('viewer-rd','open')"><img class="main-one" id="RD" src="images/RD_Paris_Moulon.png" style="width: 36.5%;"></a>
+		</div>
+		<div class="main">
+			<a href="javascript:createLinkWindow('viewer-sv','open')"><img class="main-two" id="SV" src="images/SV.png" style="width: 19.5%;"></a>
+		</div>
+		<div class="main">
+			<a href="javascript:createLinkWindow('viewer-vier','open')"><img class="main-one" id="VIER" src="images/Les_Cars_Vier.png" style="width: 36.5%;"></a>
+		</div>
+		<div class="sub-main">
+			<input type="text" id="repaint" name="repaint" placeholder="repaint" style="width: 99%;">
+			<input type="text" id="bus" name="bus" placeholder="bus" style="width: 99%; margin-top: 1%;">
+		</div>
+
+
+		<div class="viewer-sv" id="viewer-sv">
+			<a href="javascript:setActivity('Sans Voyageurs','Sans Voyageurs','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-">Sans Voyageurs</button></a>
+			<a href="javascript:setActivity('Service Spécial','Service Spécial','repaint','bus','Service Spécial','sv')"><button class="SV-btn card-button-thr-" style="margin-top: 4.8%;">Service Spécial</button></a>
+			<a href="javascript:setActivity('SACM Dépôt Marcoussis','SACM Dépôt Marcoussis','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-" style="margin-top: 9.6%;">Retour Dépôt</button></a>
+			<button class="SV-btn card-button-thr-" style="margin-top: 20%;">Mise en Service</button>
+			<a href="javascript:setActivity('BIÈVRES Gare','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-0" style="margin-top: 25%;">BIÈVRES<br/>Gare</button></a>
+			<a href="javascript:setActivity('CORMEILLES Gare','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-1" style="margin-top: 25%;">CORMEILLES<br/>Gare</button></a>
+			<a href="javascript:setActivity('LES LOGES EN JOSAS Petit Viltain','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-2" style="margin-top: 25%;">LES LOGES EN JOSAS<br/>Petit Viltain</button></a>
+			<a href="javascript:setActivity('MASSY Gare','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-3" style="margin-top: 25%;">MASSY<br/>Gare</button></a>
+			<a href="javascript:setActivity('MOULON EDF Campus Paris-Moulon','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-0" style="margin-top: -0.25%;">MOULON<br/>EDF Campus PM</button></a>
+			<a href="javascript:setActivity('MOULON Hub Hôtel','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-1" style="margin-top: -0.25%;">MOULON<br/>Hub Hôtel</button></a>
+			<a href="javascript:setActivity('MOULON La Vauve','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-2" style="margin-top: -0.25%;">MOULON<br/>La Vauve</button></a>
+			<a href="javascript:setActivity('MOULON Mare du Viver','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-3" style="margin-top: -0.25%;">MOULON<br/>Mare du Vivier</button></a>
+			<a href="javascript:setActivity('MOULON Plateau','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-0" style="margin-top: -0.25%;">MOULON<br/>Plateau</button></a>
+			<a href="javascript:setActivity('NOISY LE BACLE Ferme Neuve','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-1" style="margin-top: -0.25%;">NOISY LE BACLE<br/>Ferme Neuve</button></a>
+			<a href="javascript:setActivity('NOZAY Collège J. Macé','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-2" style="margin-top: -0.25%;">NOZAY<br/>Collège J. Macé</button></a>
+			<a href="javascript:setActivity('ORSAY Gare','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-3" style="margin-top: -0.25%;">ORSAY<br/>Gare</button></a>
+			<a href="javascript:setActivity('PALAISEAU Lycée C. Claudel','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-0" style="margin-top: -0.25%;">PALAISEAU<br/>Lycée C. Claudel</button></a>
+			<a href="javascript:setActivity('VAUHALLAN Bois Persan','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-1" style="margin-top: -0.25%;">VAUHALLAN<br/>Bois Persan</button></a>
+			<a href="javascript:setActivity('VILLEJUST Villarceaux','','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-2" style="margin-top: -0.25%;">VILLEJUST<br/>Villarceaux</button></a>
+			<a href="javascript:setActivity('None','None','repaint','bus','Sans Voyageurs','sv')"><button class="SV-btn card-button-thr-3" style="margin-top: -0.25%;">None<br/>None</button></a>
+			<br/>
+			<a href="javascript:createLinkWindow('viewer-sv','close')"><button class="SV-btn card-button-thr-" style="margin-top: 5%;">Retour</button></a>
+		</div>
+		<div class="viewer-vier" id="viewer-vier">
+			<div class="sub-one" style="margin-left: 0.8%;">	
+				<a href="javascript:ToggleView(' 91.06AV')"><img class="one" id=" 91.06AV" src="images/91.06A.png"></a>
+				<a href="javascript:setActivity('CORMEILLES Gare','MASSY Gare','repaint','bus','91.06A','91_06a')"><button class=" 91.06AV-btn card-button-one">Dest. MASSY Gare</button></a>
+				<a href="javascript:setActivity('MASSY Gare','CORMEILLES Gare','repaint','bus','91.06A','91_06a')"><button class=" 91.06AV-btn card-button-one" style="margin-top: 8%;">Dest. CORMEILLES Gare</button></a>
+				<a href="javascript:ToggleView(' 91.06AV')"><button class=" 91.06AV-btn card-button-one" style="margin-top: 16%;">Retour</button></a>
+			</div>
+			<div class="sub-one">
+				<a href="javascript:ToggleView(' 91.06BV');"><img class="one" id=" 91.06BV" src="images/91.06B.png"></a>
+				<a href="javascript:setActivity('CORMEILLES Gare','MASSY Gare','repaint','bus','91.06B','91_06b')"><button class=" 91.06BV-btn card-button-one">Dest. MASSY Gare</button></a>
+				<a href="javascript:setActivity('MASSY Gare','CORMEILLES Gare','repaint','bus','91.06B','91_06b')"><button class=" 91.06BV-btn card-button-one" style="margin-top: 8%;">Dest. CORMEILLES Gare</button></a>
+				<a href="javascript:ToggleView(' 91.06BV')"><button class=" 91.06BV-btn card-button-one" style="margin-top: 16%;">Retour</button></a>
+			</div>
+			<div class="sub-one">
+				<a href="javascript:ToggleView(' 91.06CV');"><img class="one" id=" 91.06CV" src="images/91.06C.png"></a>
+				<a href="javascript:setActivity('MOULON Plateau','MASSY Gare','repaint','bus','91.06C','91_06c')"><button class=" 91.06CV-btn card-button-one">Dest. MASSY Gare</button></a>
+				<a href="javascript:setActivity('MASSY Gare','MOULON Plateau','repaint','bus','91.06C','91_06c')"><button class=" 91.06CV-btn card-button-one" style="margin-top: 8%;">Dest. MOULON Plateau</button></a>
+				<a href="javascript:ToggleView(' 91.06CV')"><button class=" 91.06CV-btn card-button-one" style="margin-top: 16%;">Retour</button></a>
+			</div>
+			<div class="sub-one">
+				<a href="javascript:ToggleView(' 91.06DV');"><img class="one" id=" 91.06DV" src="images/91.06D.png"></a>
+				<a href="javascript:setActivity('MOULON Plateau','MASSY Gare','repaint','bus','91.06D','91_06d')"><button class=" 91.06DV-btn card-button-one">Dest. MASSY Gare</button></a>
+				<a href="javascript:setActivity('MASSY Gare','MOULON Plateau','repaint','bus','91.06D','91_06d')"><button class=" 91.06DV-btn card-button-one" style="margin-top: 8%;">Dest. MOULON Plateau</button></a>
+				<a href="javascript:ToggleView(' 91.06DV')"><button class=" 91.06DV-btn card-button-one" style="margin-top: 16%;">Retour</button></a>
+			</div>
+			<div class="sub-two" style="margin-left: 1.3%;">
+				<a href="javascript:ToggleView('H');"><img class="two" id="H" src="images/h.png"></a>
+				<a href="javascript:setActivity('MOULON CEA Gare Routière Quai 34','MOULON CEA Gare Routière Quai 34','repaint','bus','H','h')"><button class="H-btn card-button-two" style="height: 18.9%;">Dest. MOULON CEA Gare Routière Quai 34</button></a>
+				<a href="javascript:ToggleView('H')"><button class="H-btn card-button-two" style="margin-top: 12.8%;">Retour</button></a>
+			</div>
+		</div>
+		<div class="viewer-rd" id="viewer-rd">
+			<div class="sub-one" style="margin-left: 0.8%;">
+				<a href="javascript:ToggleView(' 91.06ARD')"><img class="one" id=" 91.06ARD" src="images/91.06A.png"></a>
+				<a href="javascript:setActivity('CORMEILLES Gare','MASSY Gare','repaint','bus','91.06A','91_06a')"><button class=" 91.06ARD-btn card-button-one">Dest. MASSY Gare</button></a>
+				<a href="javascript:setActivity('MASSY Gare','CORMEILLES Gare','repaint','bus','91.06A','91_06a')"><button class=" 91.06ARD-btn card-button-one" style="margin-top: 8%;">Dest. CORMEILLES Gare</button></a>
+				<a href="javascript:ToggleView(' 91.06ARD')"><button class=" 91.06ARD-btn card-button-one" style="margin-top: 16%;">Retour</button></a>
+			</div>
+			<div class="sub-one">
+				<a href="javascript:ToggleView(' 91.06BRD');"><img class="one" id=" 91.06BRD" src="images/91.06B.png"></a>
+				<a href="javascript:setActivity('CORMEILLES Gare','MASSY Gare','repaint','bus','91.06B','91_06b')"><button class=" 91.06BRD-btn card-button-one">Dest. MASSY Gare</button></a>
+				<a href="javascript:setActivity('MASSY Gare','CORMEILLES Gare','repaint','bus','91.06B','91_06b')"><button class=" 91.06BRD-btn card-button-one" style="margin-top: 8%;">Dest. CORMEILLES Gare</button></a>
+				<a href="javascript:ToggleView(' 91.06BRD')"><button class=" 91.06BRD-btn card-button-one" style="margin-top: 16%;">Retour</button></a>
+			</div>
+			<div class="sub-one">
+				<a href="javascript:ToggleView(' 91.06CRD');"><img class="one" id=" 91.06CRD" src="images/91.06C.png"></a>
+				<a href="javascript:setActivity('MOULON Plateau','MASSY Gare','repaint','bus','91.06C','91_06c')"><button class=" 91.06CRD-btn card-button-one">Dest. MASSY Gare</button></a>
+				<a href="javascript:setActivity('MASSY Gare','MOULON Plateau','repaint','bus','91.06C','91_06c')"><button class=" 91.06CRD-btn card-button-one" style="margin-top: 8%;">Dest. MOULON Plateau</button></a>
+				<a href="javascript:ToggleView(' 91.06CRD')"><button class=" 91.06CRD-btn card-button-one" style="margin-top: 16%;">Retour</button></a>
+			</div>
+			<div class="sub-one">
+				<a href="javascript:ToggleView(' 91.06DRD');"><img class="one" id=" 91.06DRD" src="images/91.06D.png"></a>
+				<a href="javascript:setActivity('MOULON Plateau','MASSY Gare','repaint','bus','91.06D','91_06d')"><button class=" 91.06DRD-btn card-button-one">Dest. MASSY Gare</button></a>
+				<a href="javascript:setActivity('MASSY Gare','MOULON Plateau','repaint','bus','91.06D','91_06d')"><button class=" 91.06DRD-btn card-button-one" style="margin-top: 8%;">Dest. MOULON Plateau</button></a>
+				<a href="javascript:ToggleView(' 91.06DRD')"><button class=" 91.06DRD-btn card-button-one" style="margin-top: 16%;">Retour</button></a>
+			</div>
+			<div class="sub-two" style="margin-left: 1.3%;">
+				<a href="javascript:ToggleView('7');"><img class="two" id="7" src="images/7.png" ></a>
+				<a><button class="7-btn card-button-thr">Dest. ORSAY Gare</button></a>
+				<a><button class="7-btn card-button-thr" style="margin-top: 3.82%;">Dest. VAUHALLAN Bois Persan</button></a>
+				<a><button class="7-btn card-button-thr" style="margin-top: 7.64%;">Dest. ORSAY Gare (2)</button></a>
+				<a href="javascript:setActivity('','','repaint','bus','7','7')"><button class="7-btn card-button-thr" style="margin-top: 11.46%;">Dest. MOULON Mare du Viver (2)</button></a>
+				<a href="javascript:ToggleView('7')"><button class="7-btn card-button-thr" style="margin-top: 15.28%;">Retour</button></a>
+			</div>
+			<div class="sub-two">
+				<a href="javascript:ToggleView('8');"><img class="two" id="8" src="images/8.png"></a>
+				<a href="javascript:setActivity('VAUHALLAN Bois Persan','MOULON Hub Hôtel','repaint','bus','8','8')"><button class="8-btn card-button-two">Dest. MOULON Hub Hôtel</button></a>
+				<a href="javascript:setActivity('MOULON Hub Hôtel','VAUHALLAN Bois Persan','repaint','bus','8','8')"><button class="8-btn card-button-two" style="margin-top: 6.4%;">Dest. VAUHALLAN Bois Persan</button></a>
+				<a href="javascript:ToggleView('8')"><button class="8-btn card-button-two" style="margin-top: 12.8%;">Retour</button></a>
+			</div>
+			<div class="sub-two">
+				<a href="javascript:ToggleView('9');"><img class="two" id="9" src="images/9.png"></a>
+				<a href="javascript:setActivity('None','None','repaint','bus','9','9')"><button class="9-btn card-button-two">Dest. None</button></a>
+				<a href="javascript:setActivity('None','None','repaint','bus','9','9')"><button class="9-btn card-button-two" style="margin-top: 6.4%;">Dest. None</button></a>
+				<a href="javascript:ToggleView('9')"><button class="9-btn card-button-two" style="margin-top: 12.8%;">Retour</button></a>
+			</div>
+			<div class="sub-two">
+				<a href="javascript:ToggleView('11');"><img class="two" id="11" src="images/11.png"></a>
+				<a href="javascript:setActivity('NOISY LE BACLE Ferme Neuve','LES LOGES EN JOSAS Petit Viltain','repaint','bus','11','11')"><button class="11-btn card-button-thr">Dest. LES LOGES EN JOSAS Petit Viltain</button></a>
+				<a href="javascript:setActivity('LES LOGES EN JOSAS Petit Viltain','NOISY LE BACLE Ferme Neuve','repaint','bus','11','11')"><button class="11-btn card-button-thr" style="margin-top: 3.82%;">Dest. NOISY LE BACLE Ferme Neuve</button></a>
+				<a href="javascript:setActivity('NOZAY Jules Verne','LES LOGES EN JOSAS Petit Viltain','repaint','bus','11','11')"><button class="11-btn card-button-thr" style="margin-top: 7.64%;">Dest. LES LOGES EN JOSAS Petit Viltain (2)</button></a>
+				<a href="javascript:setActivity('LES LOGES EN JOSAS Petit Viltain','NOZAY Jules Verne','repaint','bus','11','11')"><button class="11-btn card-button-thr" style="margin-top: 11.46%;">Dest. NOZAY Jules Verne (2)</button></a>
+				<a href="javascript:ToggleView('11')"><button class="11-btn card-button-thr" style="margin-top: 15.28%;">Retour</button></a>
+			</div>
+			<div class="sub-two">
+				<a href="javascript:ToggleView('14');"><img class="two" id="14" src="images/14.png"></a>
+				<a href="javascript:setActivity('MOULON EDF Campus Paris-Moulon','ORSAY Gare','repaint','bus','14','14')"><button class="14-btn card-button-thr">Dest. ORSAY Gare</button></a>
+				<a href="javascript:setActivity('ORSAY Gare','MOULON EDF Campus Paris-Moulon','repaint','bus','14','14')"><button class="14-btn card-button-thr" style="margin-top: 3.82%;">Dest. MOULON EDF Campus Paris-Moulon</button></a>
+				<a href="javascript:setActivity('MOULON La Vauve','ORSAY Gare','repaint','bus','14','14')"><button class="14-btn card-button-thr" style="margin-top: 7.64%;">Dest. ORSAY Gare (2)</button></a>
+				<a href="javascript:setActivity('ORSAY Gare','MOULON La Vauve','repaint','bus','14','14')"><button class="14-btn card-button-thr" style="margin-top: 11.46%;">Dest. MOULON La Vauve (2)</button></a>
+				<a href="javascript:ToggleView('14')"><button class="14-btn card-button-thr" style="margin-top: 15.28%;">Retour</button></a>
+			</div>
+			<div class="sub-two" style="margin-left: 1.3%;">
+				<a href="javascript:ToggleView('17');"><img class="two" id="17" src="images/17.png"></a>
+				<a href="javascript:setActivity('BIÈVRES Gare','BIÈVRES Gare','repaint','bus','17','17')"><button class="17-btn card-button-two" style="height: 18.9%;">Dest. BIÈVRES Gare</button></a>
+				<a href="javascript:ToggleView('17')"><button class="17-btn card-button-two" style="margin-top: 12.8%;">Retour</button></a>
+			</div>
+			<div class="sub-two">
+				<a href="javascript:ToggleView('s8');"><img class="two" id="s8" src="images/s8.png"></a>
+				<a href="javascript:setActivity('VILLEJUST Villarceaux','PALAISEAU Lycée C. Claudel','repaint','bus','s8','s8')"><button class="s8-btn card-button-two">Dest. PALAISEAU Lycée C. Claudel</button></a>
+				<a href="javascript:setActivity('PALAISEAU Lycée C. Claudel','VILLEJUST Villarceaux','repaint','bus','s8','s8')"><button class="s8-btn card-button-two" style="margin-top: 6.4%;">Dest. VILLEJUST Villarceaux</button></a>
+				<a href="javascript:ToggleView('s8')"><button class="s8-btn card-button-two" style="margin-top: 12.8%;">Retour</button></a>
+			</div>
+			<div class="sub-two">
+				<a href="javascript:ToggleView('11s');"><img class="two" id="11s" src="images/11s.png"></a>
+				<a href="javascript:setActivity('LES LOGES EN JOSAS Petit Viltain','NOZAY Collège J. Macé','repaint','bus','11s','11s')"><button class="11s-btn card-button-thr">Dest. NOZAY Collège J. Macé</button></a>
+				<a href="javascript:setActivity('NOZAY Collège J. Macé','LES LOGES EN JOSAS Petit Viltain','repaint','bus','11s','11s')"><button class="11s-btn card-button-thr" style="margin-top: 3.82%;">Dest. LES LOGES EN JOSAS Petit Viltain</button></a>
+				<a href="javascript:setActivity('NOISY LE BACLE Ferme Neuve','NOZAY Collège J. Macé','repaint','bus','11s','11s')"><button class="11s-btn card-button-thr" style="margin-top: 7.64%;">Dest. NOZAY Collège J. Macé (2)</button></a>
+				<a href="javascript:setActivity('NOZAY Collège J. Macé','NOISY LE BACLE Ferme Neuve','repaint','bus','11s','11s')"><button class="11s-btn card-button-thr" style="margin-top: 11.45%;">Dest. NOISY LE BACLE Ferme Neuve (2)</button></a>
+				<a href="javascript:ToggleView('11s')"><button class="11s-btn card-button-thr" style="margin-top: 15.28%;">Retour</button></a>
+			</div>
+			<div class="sub-two">
+				<a href="javascript:ToggleView('17s');"><img class="two" id="17s" src="images/17s.png"></a>
+				<a href="javascript:setActivity('NOZAY Collège J. Macé','NOZAY Collège J. Macé','repaint','bus','17s','17s')"><button class="17s-btn card-button-two" style="height: 18.9%;">Dest. NOZAY Collège J. Macé</button></a>
+				<a href="javascript:ToggleView('17s')"><button class="17s-btn card-button-two" style="margin-top: 12.8%;">Retour</button></a>
+			</div>
+		</div>
+		
+		<iframe class="viewer-i" id="viewer-gpm" src="https://omsi-gpm.fr">
+		</iframe>
+  	</body>
+</html>

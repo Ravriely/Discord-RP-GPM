@@ -1,0 +1,255 @@
+html {
+	height: 0%;
+	overflow: hidden;
+	-webkit-app-region: drag;
+}
+
+.main {
+	display: inline;
+	margin: 1%;
+}
+
+.sub-main {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+img.main-one {
+	-webkit-app-region: no-drag;
+	width: 24.5%;
+	visibility: visible;
+}
+
+img.main-two {
+	-webkit-app-region: no-drag;
+	width: 19.5%;
+	visibility: visible;
+}
+
+img.one {
+	-webkit-app-region: no-drag;
+	position: static;
+	width: 24.5%;
+	visibility: visible;
+}
+
+img.two {
+	-webkit-app-region: no-drag;
+	position: static;
+	width: 19.5%;
+	visibility: visible;
+}
+
+.sub-one {
+	-webkit-app-region: no-drag;
+	margin-left: -0.5%;
+	border-width: 1px;
+	display: inline;
+}
+
+.sub-two {
+	-webkit-app-region: no-drag;
+	margin-left: -0.5%;
+	border-width: 1px;
+	display: inline;
+}
+
+.sub-thr {
+	-webkit-app-region: no-drag;
+	margin-left: 0%;
+	border-width: 1px;
+	display: inline;
+}
+
+.card-button-one {
+	-webkit-app-region: no-drag;
+	background-color: #ffffff;
+	visibility: hidden;
+	width: 24.5%;
+	height: 11.8%;
+	margin-left: -25%;
+	position: absolute;
+}
+
+.card-button-two {
+	-webkit-app-region: no-drag;
+	background-color: #ffffff;
+	margin-left: -20%;
+	visibility: hidden;
+	width: 19.5%;
+	height: 9.45%;
+	position: absolute;
+}
+
+.card-button-thr {
+	-webkit-app-region: no-drag;
+	background-color: #ffffff;
+	margin-left: -20%;
+	visibility: hidden;
+	width: 19.5%;
+	height: 5.67%;
+	position: absolute;
+}
+
+.card-button-thr- {
+	-webkit-app-region: no-drag;
+	background-color: #ffffff;
+	visibility: visible;
+	width: 90%;
+	height: 7%;	
+	margin-left: 5%;
+	position: absolute;
+}
+
+.card-button-thr-0 {
+	-webkit-app-region: no-drag;
+	background-color: #ffffff;
+	visibility: visible;
+	width: 22.88%;
+	height: 9%;	
+	margin-left: 5%;
+	display: inline;
+}
+
+.card-button-thr-1 {
+	-webkit-app-region: no-drag;
+	background-color: #ffffff;
+	visibility: visible;
+	width: 22.88%;
+	height: 9%;	
+	margin-left: -1%;
+	display: inline;
+}
+
+.card-button-thr-2 {
+	-webkit-app-region: no-drag;
+	background-color: #ffffff;
+	visibility: visible;
+	width: 22.88%;
+	height: 9%;	
+	margin-left: -1%;
+	display: inline;
+}
+
+.card-button-thr-3 {
+	-webkit-app-region: no-drag;
+	background-color: #ffffff;
+	visibility: visible;
+	width: 22.88%;
+	height: 9%;	
+	margin-left: -1%;
+	display: inline;
+}
+
+.viewer-i {
+	background-color: #ffffff;
+	width: 102.2%;
+	height: 97%;
+	position: absolute;
+	overflow-x: hidden;
+	left: -1.4%;
+	bottom: -105%;
+	transition: 1s;
+}
+
+.viewer-vier {
+	background-color: #ffffff;
+	width: 103.2%;
+	height: 70%;
+	position: absolute;
+	overflow-x: hidden;
+	left: -1.4%;
+	bottom: -105%;
+	transition: 1s;
+}
+
+.viewer-rd {
+	background-color: #ffffff;
+	width: 103.2%;
+	height: 70%;
+	position: absolute;
+	overflow-x: hidden;
+	left: -1.4%;
+	bottom: -105%;
+	transition: 1s;
+}
+
+.viewer-sv {
+	background-color: #ffffff;
+	width: 103.2%;
+	height: 70%;
+	position: absolute;
+	overflow-x: hidden;
+	left: -1.4%;
+	bottom: -105%;
+	transition: 1s;
+}
+
+#titlebar {
+	top: 0%;
+	display: block;
+	position: fixed;
+	height: 6%;
+	width: calc(102% - 2px); /*Compensate for body 1px border*/
+	background: #254053;
+	padding: 0.1%;
+	left: -1%;
+  }
+  
+  #titlebar #drag-region {
+	width: 100%;
+	height: 100%;
+	-webkit-app-region: drag;
+  }
+  #window-controls {
+	display: grid;
+	grid-template-columns: repeat(3, 46px);
+	position: absolute;
+	top: 0;
+	right: 1%;
+	height: 100%;
+  }
+  
+  #window-controls .button {
+	grid-row: 1 / span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+  }
+  #min-button {
+	grid-column: 2;
+	-webkit-app-region: no-drag;
+  }
+  #close-button {
+	grid-column: 3;
+	-webkit-app-region: no-drag;
+  }
+
+
+#window-controls .icon {
+    width: 50%;
+	-webkit-app-region: no-drag;
+}
+
+#close-button:hover {
+  background: #E81123 !important;
+}
+#close-button:active {
+  background: #F1707A !important;
+}
+
+#min-button:hover {
+  background: #E81123 !important;
+}
+#min-button:active {
+  background: #F1707A !important;
+}
+
+#bar-img {
+	display: flex;
+	margin-left: 1.4%;
+	margin-top: 0.25%;
+	height: 90%;
+}

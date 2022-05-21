@@ -1,0 +1,22 @@
+{
+  "name": "discord-omsi-gpm-presence",
+  "version": "1.0.0",
+  "description": "Unofficial OMSI 2 RP for Grand Paris Moulon DLC by Creations AgoraS-114",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "export": "electron-packager . Discord-RP-GPM --platform=win32 --arch=x64"
+  },
+  "author": "Ravriel",
+  "license": "ISC",
+  "dependencies": {
+    "discord-rich-presence": "^0.0.8",
+    "discord-rpc": "^4.0.1",
+    "discord.js": "^13.6.0",
+    "electron-packager": "^15.5.1"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "electron": "^17.0.0"
+  }
+}
