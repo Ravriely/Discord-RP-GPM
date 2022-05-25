@@ -3,7 +3,6 @@
 function ToggleView(line) {
 	var x = document.getElementById(line);
 	var y = document.getElementsByClassName(line + '-btn');
-	console.log(y);
 	if (x.style.visibility === 'hidden') {
 	  x.style.visibility = 'visible';
 	  for (var i = 0; i < y.length ; i++) {
@@ -57,6 +56,9 @@ function getStamp(line_super) {
 	if (line_super == "7") {
 		return 15;
 	}
+	if (line_super == "7b") {
+		return 12;
+	}
 	if (line_super == "8") {
 		return 24;
 	}
@@ -67,13 +69,19 @@ function getStamp(line_super) {
 		return 0;
 	}
 	if (line_super == "11") {
-		return 0;
+		return 25;
+	}
+	if (line_super == "11b") {
+		return 11;
 	}
 	if (line_super == "11s") {
-		return 0;
+		return 12;
+	}
+	if (line_super == "11sb") {
+		return 15;
 	}
 	if (line_super == "14") {
-		return 0;
+		return 10;
 	}
 	if (line_super == "17") {
 		return 17;
@@ -116,10 +124,17 @@ async function setActivity(departure,destination,repaint,bus,line,line_super) {
 		bus = precedent_rpc[3];
 		line = precedent_rpc[4];
 		line_super = precedent_rpc[5];
-		console.log(precedent_rpc, precedent_rpc[0]);
 	} else {
 		date_stamp = new Date().getMinutes() + getStamp(line_super);
 		precedent_rpc = [departure,destination,repaint,bus,line,line_super,date_stamp];
+	}
+
+	if (line_super == "7b") {
+		line_super = "7";
+	} else if (line_super == "11b") {
+		line_super = "11";
+	} else if (line_super == "11sb") {
+		line_super = "11s";
 	}
 
 	if (infos == true) {
@@ -127,7 +142,11 @@ async function setActivity(departure,destination,repaint,bus,line,line_super) {
 		bus = document.getElementById('bus').value;
 		info_state = String(repaint + ' - ' + bus);
 	} else if (line_super != null && line_super != 'None' && line_super != 'sv') {
-		info_state = String('Arrivée prévue dans ' + (date_stamp - new Date().getMinutes()) + ' minutes');
+		line_stamp = date_stamp - new Date().getMinutes();
+		if (line_stamp <= 0) {
+			line_stamp = 0;
+		}
+		info_state = String('Arrivée prévue dans ' + line_stamp + ' minutes');
 	}
 
 	if ((departure == destination || destination == '') && line_super == 'sv') {
